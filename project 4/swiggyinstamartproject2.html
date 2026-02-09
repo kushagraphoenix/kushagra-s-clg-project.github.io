@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instamart – Grocery in Minutes</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: #f6f6f6; }
+    header {
+      background: #fc8019;
+      color: white;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { font-size: 22px; }
+    header input {
+      padding: 8px;
+      width: 260px;
+      border-radius: 6px;
+      border: none;
+    }
+    .banner {
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .banner h2 { color: #333; }
+    .categories, .products {
+      margin: 20px;
+    }
+    .categories h3, .products h3 { margin-bottom: 12px; }
+    .category-list, .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 16px;
+    }
+    .category, .product {
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .product button {
+      margin-top: 8px;
+      padding: 6px 12px;
+      background: #60b246;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 16px;
+      background: #fff;
+      margin-top: 30px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Instamart</h1>
+    <input type="text" placeholder="Search for groceries" />
+  </header>
+
+  <section class="banner">
+    <div>
+      <h2>Groceries delivered in minutes</h2>
+      <p>Fresh fruits, veggies & daily essentials</p>
+    </div>
+    <strong>⚡ 10–15 mins</strong>
+  </section>
+
+  <section class="categories">
+    <h3>Shop by Category</h3>
+    <div class="category-list">
+      <div class="category">Fruits & Veggies</div>
+      <div class="category">Dairy</div>
+      <div class="category">Snacks</div>
+      <div class="category">Beverages</div>
+      <div class="category">Household</div>
+    </div>
+  </section>
+
+  <section class="products">
+    <h3>Popular Items</h3>
+    <div class="product-list">
+      <div class="product">
+        <h4>Apples</h4>
+        <p>₹120 / kg</p>
+        <button>Add</button>
+      </div>
+      <div class="product">
+        <h4>Milk</h4>
+        <p>₹55 / litre</p>
+        <button>Add</button>
+      </div>
+      <div class="product">
+        <h4>Bread</h4>
+        <p>₹40</p>
+        <button>Add</button>
+      </div>
+      <div class="product">
+        <h4>Chips</h4>
+        <p>₹30</p>
+        <button>Add</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Demo Instamart website (for learning purposes only)</p>
+  </footer>
+</body>
+</html>
